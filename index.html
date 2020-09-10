@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Say Hi!</title>
 </head>
 <body>
     <div class="main-container">
-        <div class="display">
-            
+        <div class="display" id="display-area"></div>
+
+        <div class="main-buttons-container" id="all-btns">
+           
+                <div class="name-1">
+                    <button type="button" class="btn btn-light" id="victor">Victor</button>
+                </div>
+
+                <div class="name-2">
+                    <button type="button" class="btn btn-light" id="john">John</button>
+                </div>
+
+                <div class="name-3">
+                    <button type="button" class="btn btn-light" id="adrian">Adrian</button>
+                </div>
+
+                <div class="name-4">
+                    <button type="button" class="btn btn-light" id="pau">Pau</button>
+                </div>
+    
+                <div class="say-hello-btn">
+                    <button type="button" data-action="hello-btn" class="btn btn-info" id="hello">Hello,</button>
+                </div>
+
+                <div class="say-gb-btn">
+                    <button type="button" data-action="gb-btn" id="bye" class="btn btn-dark">Good bye!</button>
+                </div>
+
+                <div class="input-field" id="input-name">
+                    <input class="form-control" id="name-holder" type="text" placeholder="NAME">
+                </div>
+
+                <div class="submit-btn">
+                    <button type="button" data-action="sbmit" class="btn btn-success" id="submit">Submit</button>               
+                </div>
         </div>
-        <div class="name-buttons">
-            <div class="name-1">
-                
-            </div>
-            <div class="name-2">
-
-            </div>
-            <div class="name-3">
-
-            </div>
-            <div class="name-4">
-
-            </div>
-        </div>
-
-        <div class="say-hi-btn">
-
-        </div>
-        <div class="say-gb-btn">
-
-        </div>
-
-        <div class="clear-btn">
-
-        </div>
-
     </div>
 </body>
 <script src="app.js"></script>
